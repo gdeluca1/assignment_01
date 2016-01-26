@@ -80,7 +80,7 @@ class Test_Assignment_01(unittest.TestCase):
         A test for bigger, or smaller integers
         """
         big = 1e6
-        self.assertEqual(big, 1,000,000)
+        self.assertEqual(big, 1000000)
         self.assertTrue(type(big), int)
 
         small = 1e-5
@@ -93,7 +93,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         i = 1
         self.assertTrue(type(i) == int)
-        self.assertTrue(isinstance(i, float))  # These lines do the same type checking
+        self.assertTrue(isinstance(i, int))  # These lines do the same type checking
         i = float(i)
         self.assertTrue(isinstance(i, float))
         i = str(i)
@@ -114,7 +114,7 @@ class Test_Assignment_01(unittest.TestCase):
         """
         j = 3.9999
         self.assertTrue(int(j), float)
-        self.assertEqual(int(j), 4)
+        self.assertEqual(int(j), 3)
 
     def tearDown(self):
         """
